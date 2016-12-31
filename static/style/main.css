@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+body{
+  background-color:white;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+#nameSec_ul{
+  display:flex;
+}
+#nameSec_ul #letter{
+  background-color: #dee5e4;
+  font-size:200px;
+  padding:0px 50px 0px 50px;
+  margin:0;
+  border:1px solid black;
+}
+
+#nameSec_ul #name{
+  font-size:200px;
+}
+#nameSec{
+  display: flex;
+}
+#nameSec #letter{
+  background-color: #dee5e4;
+  font-size:50px;
+  padding:0px 15px 0px 15px;
+  margin:0;
+  border:1px solid black;
+}
+
+#nameSec #name{
+  font-size:50px;
+}
+
+.box{
+  padding:20px;
+}
+
+#info{
+  margin-left:20px;
+  border-left:1px solid black;
+}
