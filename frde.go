@@ -20,7 +20,7 @@ func main(){
 	http.HandleFunc("/", home)
 	http.HandleFunc("/index.html", loaded)
 	http.Handle("/static/", http.StripPrefix("/static/", fs))
-	err := http.ListenAndServe(":9090", nil)
+	err := http.ListenAndServe(":80", nil)
 	
 	if err != nil {
 		log.Fatal("ListenAndServe: ", err)
