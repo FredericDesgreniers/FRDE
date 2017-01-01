@@ -14,8 +14,10 @@ function writeNameLoop(nameEl){
     if(nameIndex < name.length){
         writeNameLoop(nameEl);
     }else{
+      document.getElementById("all").style.opacity = 0;
       nameEl.innerHTML = name.substr(1);
       setTimeout(function(){
+        nameEl.style.opacity = 0;
         var xmlhttp;
         if (window.XMLHttpRequest) { // code for IE7+, Firefox, Chrome, Opera, Safari
           xmlhttp = new XMLHttpRequest();
@@ -27,6 +29,10 @@ function writeNameLoop(nameEl){
           if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {
             document.getElementById("all").innerHTML = xmlhttp.responseText;
             window.history.replaceState("", "Frederic Desgreniers", '/index.html');
+            setTimeout(function(){
+              document.getElementById("all").style.opacity = 1;
+            }, 100);
+            
           }
         }
         xmlhttp.open("GET", "/index.html", true);

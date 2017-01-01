@@ -6,6 +6,9 @@ body{
   align-items: center;
   justify-content: center;
 }
+#all{
+  transition:2s;
+}
 #nameSec_ul{
   display:flex;
 }
